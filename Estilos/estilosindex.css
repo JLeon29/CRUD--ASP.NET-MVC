@@ -1,0 +1,47 @@
+*{
+    font-family: Arial;
+}
+
+h2 {
+    color: midnightblue;
+    text-shadow: 10px 2px 7px #fff;
+    font-size: 50px;
+    width: 100w;
+}  
+
+.table tr:hover {
+    background-color: slategray;
+}
+
+th:hover{
+    color: white;
+}
+body{
+    margin: 0;
+    background: url(/Estilos/imagenes/lucky.jpg);
+    background-attachment: initial;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight:bold;
+    
+}
+body:before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position:absolute;
+    top:0;
+    left: 0;
+
+    background: linear-gradient(90deg, #52c4df, #ad55c1);
+
+    opacity: 0.7;
+    z-index: -1; 
+
+}
+table {
+    color: navy;
+}
+
