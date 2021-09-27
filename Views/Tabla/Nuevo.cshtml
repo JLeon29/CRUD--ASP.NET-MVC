@@ -1,0 +1,77 @@
+﻿@model LUCKYSAC.Models.VieModels.ClientesViewModell
+@{
+    ViewBag.Title = "Nuevo";
+}
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Estilos/estilosnuevo.css"
+</head>
+<center>
+    <h2>Registro de Clientes</h2>
+</center>
+
+
+@using (Html.BeginForm("Nuevo", "Tabla", FormMethod.Post))
+{
+<center>
+    <div class="row">
+        <div class="col-md-12">
+
+            <br />
+            <div>
+                @Html.LabelFor(d => d.Nombres)
+                @Html.TextBoxFor(d => d.Nombres, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Nombres, null, new { @class = "red" })
+            </div>
+            <div>
+                <br />
+                @Html.LabelFor(d => d.Apellidos)
+                @Html.TextBoxFor(d => d.Apellidos, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Apellidos, null, new { @class = "red" })
+            </div>
+            <div>
+                <br />
+                @Html.LabelFor(d => d.DNI)
+                @Html.TextBoxFor(d => d.DNI, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.DNI, null, new { @class = "red" })
+            </div>
+            <div>
+                <br />
+                @Html.LabelFor(d => d.Telefono)
+                @Html.TextBoxFor(d => d.Telefono, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Telefono, null, new { @class = "red" })
+            </div>
+            <div>
+                <br />
+                @Html.LabelFor(d => d.Correo)
+                @Html.TextBoxFor(d => d.Correo, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Correo, null, new { @class = "red" })
+            </div>
+            <div>
+                <br />
+                @Html.LabelFor(d => d.Direccion)
+                @Html.TextBoxFor(d => d.Direccion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Direccion, null, new { @class = "red" })
+                @Html.ValidationMessageFor(d => d.Correo, null, new { @class = "red" })
+            </div>
+            <br />
+            <div>
+                <div style="text-align:center;">
+                    <input value="Guardar" class="btn btn-primary" type="submit" />
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</center>
+
+    <br />
+    <div style="text-align:right">
+        <a class="btn btn-success" href="~/Tabla/Index">Regresar al Menu Principal</a>
+    </div>
+}
+
+
